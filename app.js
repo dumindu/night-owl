@@ -68,11 +68,16 @@ const themes = {
     }
   }
 };
+const settings = {
+  theme: "light"
+}
+
 let currentTheme;
 
 function updateTheme(theme) {
   if (!theme) {
     theme = "light";
+    browser.storage.local.set({settings});
   }
   currentTheme = theme;
   browser.storage.local.set({theme: theme});
@@ -95,7 +100,5 @@ function toggleTheme() {
 
 browser.browserAction.onClicked.addListener(toggleTheme);
 
-currentTheme = browser.storage.local.get("theme");
-currentTheme.then(function (theme) {
-  updateTheme(theme)
-}, updateTheme());
+const storedSettings = browser.storage.local.get();
+storedSettings.then(storedSettings.settings ? updateTheme(storedSettings.settings.theme) : updateTheme());
