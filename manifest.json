@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "White Owl🔥",
+  "description": "Ultimate dark and white themes for Firefox",
+  "homepage_url": "https://github.com/dumindu/white-owl",
+  "permissions": [
+    "theme",
+    "storage"
+  ],
+  "icons": {
+    "128": "icons/white-owl.svg"
+  },
+  "background": {
+    "scripts": [
+      "app.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icons/light-mode.svg",
+    "default_title": "Enable dark theme 🌑"
+  },
+  "version": "0.5",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "55.0a2"
+    }
+  }
+}
