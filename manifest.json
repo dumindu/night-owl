@@ -19,10 +19,11 @@
     "default_icon": "icons/light-mode.svg",
     "default_title": "Enable dark theme 🌑"
   },
-  "version": "0.5",
+  "version": "0.5.1",
   "applications": {
     "gecko": {
-      "strict_min_version": "55.0a2"
+      "strict_min_version": "55.0a2",
+      "id": "{9b606aab-aa9d-42cc-a213-e52719e0bd55}"
     }
   }
 }
