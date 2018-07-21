@@ -16,4 +16,4 @@ The ultimate dark and white themes for Firefox
 ![screenshot](https://i.imgur.com/3eh5UmS.png)
 
 ---
-Icons are created by [Oksana Latysheva](https://thenounproject.com/latyshevaoksana/uploads/?i=759872) from the []Noun Project](https://thenounproject.com)
+Icons are created by [Oksana Latysheva](https://thenounproject.com/latyshevaoksana/uploads/?i=759872) from the [Noun Project](https://thenounproject.com)
