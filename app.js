@@ -68,19 +68,12 @@ const themes = {
     }
   }
 };
-const settings = {
-  theme: "light"
-}
-
-let currentTheme;
 
 function updateTheme(theme) {
   if (!theme) {
     theme = "light";
-    browser.storage.local.set({settings});
   }
-  currentTheme = theme;
-  browser.storage.local.set({theme: theme});
+  browser.storage.local.set({"theme": theme});
   browser.theme.update(themes[theme]);
   browser.browserAction.setIcon({
     path: "icons/" + theme + "-mode.svg"
@@ -91,6 +84,7 @@ function updateTheme(theme) {
 }
 
 function toggleTheme() {
+  let currentTheme = browser.storage.local.get("theme");
   if (currentTheme === "dark") {
     updateTheme("light");
   } else {
@@ -101,4 +95,4 @@ function toggleTheme() {
 browser.browserAction.onClicked.addListener(toggleTheme);
 
 const storedSettings = browser.storage.local.get();
-storedSettings.then(storedSettings.settings ? updateTheme(storedSettings.settings.theme) : updateTheme());
+storedSettings.then(storedSettings.theme ? updateTheme(storedSettings.theme) : updateTheme());
