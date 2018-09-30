@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "White Owl🔥",
+  "name": "Night Owl🔥",
   "description": "Ultimate dark and white themes for Firefox",
-  "homepage_url": "https://github.com/dumindu/white-owl",
+  "homepage_url": "https://github.com/dumindu/night-owl",
   "permissions": [
     "theme",
     "storage"
   ],
   "icons": {
-    "128": "icons/white-owl.svg"
+    "128": "icons/night-owl.png"
   },
   "background": {
     "scripts": [
@@ -16,14 +16,14 @@
     ]
   },
   "browser_action": {
-    "default_icon": "icons/light-mode.svg",
-    "default_title": "Enable dark theme 🌑"
+    "default_icon": "icons/dark-mode.svg",
+    "default_title": "Enable light theme ☀️"
   },
-  "version": "0.5.1",
+  "version": "0.3",
   "applications": {
     "gecko": {
       "strict_min_version": "55.0a2",
-      "id": "{9b606aab-aa9d-42cc-a213-e52719e0bd55}"
+      "id": "{74997d71-ea10-4020-921b-47056dd7d28c}"
     }
   }
 }
