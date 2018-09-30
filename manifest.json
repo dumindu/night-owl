@@ -1,29 +1,34 @@
 {
   "manifest_version": 2,
-  "name": "Night Owl🔥",
-  "description": "Ultimate dark and white themes for Firefox",
-  "homepage_url": "https://github.com/dumindu/night-owl",
-  "permissions": [
-    "theme",
-    "storage"
-  ],
-  "icons": {
-    "128": "icons/night-owl.png"
-  },
-  "background": {
-    "scripts": [
-      "app.js"
-    ]
-  },
-  "browser_action": {
-    "default_icon": "icons/dark-mode.svg",
-    "default_title": "Enable light theme ☀️"
-  },
-  "version": "0.3",
+
   "applications": {
     "gecko": {
       "strict_min_version": "55.0a2",
       "id": "{74997d71-ea10-4020-921b-47056dd7d28c}"
     }
-  }
+  },
+
+  "name": "Night Owl🔥",
+  "version": "0.3",
+  "description": "Ultimate dark and white themes for Firefox",
+  "homepage_url": "https://github.com/dumindu/night-owl",
+  "icons": {
+    "128": "icons/night-owl.png"
+  },
+
+  "background": {
+    "scripts": [
+      "app.js"
+    ]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/dark-mode.svg",
+    "default_title": "Enable light theme ☀️"
+  },
+
+  "permissions": [
+    "theme",
+    "storage"
+  ]
 }
