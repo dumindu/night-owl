@@ -25,6 +25,9 @@ const themes = {
       button_background_hover: "#424242",
       icons_attention: "#a98e5c",
 
+      ntp_background: "#363636",
+      ntp_text: "#8f8f8f",
+
       popup: "#363636",
       popup_text: "#8f8f8f",
       popup_border: "#333333",
@@ -64,6 +67,9 @@ const themes = {
       button_background_active: "#e6e8e3",
       button_background_hover: "#e6e8e3",
 
+      ntp_background: "#fcfbf9",
+      ntp_text: "#545351",
+
       popup: "#fcfbf9",
       popup_text: "#545351",
       popup_border: "#c5c4c2",
@@ -79,10 +85,13 @@ const themes = {
   }
 };
 
+let currentTheme;
+
 function updateTheme(theme) {
   if (!theme) {
     theme = "dark";
   }
+  currentTheme = theme;
   browser.storage.local.set({"theme": theme});
   browser.theme.update(themes[theme]);
   browser.browserAction.setIcon({
@@ -94,7 +103,6 @@ function updateTheme(theme) {
 }
 
 function toggleTheme() {
-  let currentTheme = browser.storage.local.get("theme");
   if (currentTheme === "dark") {
     updateTheme("light");
   } else {
@@ -104,5 +112,10 @@ function toggleTheme() {
 
 browser.browserAction.onClicked.addListener(toggleTheme);
 
-const storedSettings = browser.storage.local.get();
-storedSettings.then(storedSettings.theme ? updateTheme(storedSettings.theme) : updateTheme());
+const setting = browser.storage.local.get();
+setting.then(onGot);
+
+function onGot(setting) {
+  setting.theme ? updateTheme(setting.theme) : updateTheme()
+}
+storedSettings.then(onGot);
