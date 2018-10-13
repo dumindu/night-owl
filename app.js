@@ -19,10 +19,10 @@ const themes = {
 
       toolbar_field_focus: "#363636",
       toolbar_field_text_focus: "#8f8f8f",
-      toolbar_field_border_focus: "#424242",
+      toolbar_field_border_focus: "rgba(255, 255, 255, .07)",
 
-      button_background_active: "#424242",
-      button_background_hover: "#424242",
+      button_background_active: "rgba(255, 255, 255, .07)",
+      button_background_hover: "rgba(255, 255, 255, .07)",
       icons_attention: "#a98e5c",
 
       ntp_background: "#363636",
@@ -31,13 +31,13 @@ const themes = {
       popup: "#363636",
       popup_text: "#8f8f8f",
       popup_border: "#333333",
-      popup_highlight: "#424242",
+      popup_highlight: "rgba(255, 255, 255, .07)",
       popup_highlight_text: "#8f8f8f",
 
       sidebar: "#363636",
       sidebar_text: "#8f8f8f",
       sidebar_border: "#333333",
-      sidebar_highlight: "#424242",
+      sidebar_highlight: "rgba(255, 255, 255, .07)",
       sidebar_highlight_text: "#8f8f8f",
     }
   },
@@ -62,10 +62,10 @@ const themes = {
 
       toolbar_field_focus: "#fcfbf9",
       toolbar_field_text_focus: "#8e8e8c",
-      toolbar_field_border_focus: "#e6e8e3",
+      toolbar_field_border_focus: "rgba(30, 32, 28, .08)",
 
-      button_background_active: "#e6e8e3",
-      button_background_hover: "#e6e8e3",
+      button_background_active: "rgba(30, 32, 28, .08)",
+      button_background_hover: "rgba(30, 32, 28, .08)",
 
       ntp_background: "#fcfbf9",
       ntp_text: "#545351",
@@ -73,13 +73,13 @@ const themes = {
       popup: "#fcfbf9",
       popup_text: "#545351",
       popup_border: "#c5c4c2",
-      popup_highlight: "#e6e8e3",
+      popup_highlight: "rgba(30, 32, 28, .08)",
       popup_highlight_text: "#545351",
 
       sidebar: "#fcfbf9",
       sidebar_text: "#545351",
       sidebar_border: "#c5c4c2",
-      sidebar_highlight: "#e6e8e3",
+      sidebar_highlight: "rgba(30, 32, 28, .08)",
       sidebar_highlight_text: "#545351",
     }
   }
