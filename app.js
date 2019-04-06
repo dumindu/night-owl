@@ -72,13 +72,13 @@ const themes = {
 
       popup: "#fcfbf9",
       popup_text: "#545351",
-      popup_border: "#c5c4c2",
+      popup_border: "#e6e8e3",
       popup_highlight: "rgba(30, 32, 28, .08)",
       popup_highlight_text: "#545351",
 
       sidebar: "#fcfbf9",
       sidebar_text: "#545351",
-      sidebar_border: "#c5c4c2",
+      sidebar_border: "#e6e8e3",
       sidebar_highlight: "rgba(30, 32, 28, .08)",
       sidebar_highlight_text: "#545351",
     }
