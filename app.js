@@ -2,9 +2,12 @@ const themes = {
   "dark": {
     colors: {
       accentcolor: "#424242",
+      textcolor: "#8f8f8f",
+
+      frame: "#424242",
       tab_background_separator: "#424242",
       toolbar: "#363636",
-      textcolor: "#8f8f8f",
+      tab_background_text: "#8f8f8f",
       tab_line: "#363636",
       tab_loading: "#424242",
 
@@ -44,9 +47,12 @@ const themes = {
   "light": {
     colors: {
       accentcolor: "#e6e8e3",
+      textcolor: "#8e8e8c",
+
+      frame: "#e6e8e3",
       tab_background_separator: "#e6e8e3",
       toolbar: "#fcfbf9",
-      textcolor: "#8e8e8c",
+      tab_background_text: "#8e8e8c",
       tab_line: "#fcfbf9",
       tab_text: "#545351",
       tab_loading: "#e6e8e3",
